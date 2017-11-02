@@ -1,0 +1,140 @@
+<!--homepage-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WELCOME TO GEC</title>
+		<link rel="shortcut icon" href="lg.png">
+		<link rel="stylesheet" type="text/css" href="coverpage.css">
+		<link rel="stylesheet" type="text/css" href="slideshow.css">
+		<link rel="stylesheet" type="text/css" href="root.css">
+		
+		<script>
+		var imagecount=1;
+		var total=5;
+		
+		function slide(x){
+		var image= document.getElementById('img');
+		imagecount=imagecount+x;
+		if(imagecount>total){
+		imagecount=1;}
+		else if(imagecount<1){
+		imagecount=total;}
+		image.src="slide"+imagecount+".jpg";}
+		
+		window.setInterval(function slide(x){
+		var image= document.getElementById('img');
+		imagecount=imagecount+1;
+		if(imagecount>total){
+		imagecount=1;}
+		else if(imagecount<1){
+		imagecount=total;}
+		image.src="slide"+imagecount+".jpg";},5000);
+		
+		
+		</script>
+		<!--<script src="root.js" type="text/javascript">--></script>
+	</head>
+<body background="background_black_white_wooden_surface_board_18564_1920x1080.jpg">
+<!--navigation-->
+	<ul>
+		
+		<li><a class="active" href="coverpage.html"><img height="20px" width="20px" class="ico" src="home.png">Home</a></li>
+		<li><a href="news.html">News</a></li>
+		<li class="dropdown"><a href="institution.html" class="dropbtn">Institution</a>
+		
+		<div class="dropdown-content">
+		<a href="usa.html">USA</a>
+		<a href="canada.html">CANADA</a>
+		<a href="AUSTRALIA.html">AUSTRALIA</a>
+		<a href="uk.html">UK</a>
+		<a href="china.html">CHINA</a>
+		<a href="germany.html">GERMANY</a>
+		<a href="france.html">FRANCE</a>
+		<a href="newzealand.html">NEWZEALAND</a>
+		<a href="japan.html">JAPAN</a>
+		<a href="netherland.html">NETHERLAND</a>
+		<a href="brazil.html">BRAZIL</a>
+		<a href="india.html">INDIA</a>
+		</div>
+		</li>
+		
+		<li><a href="contact.html">Contact</a></li>
+		<li class="dropdown"><a href="#" class="dropbtn">Login</a>
+		<div class="dropdown-content">
+		<a href="registration.html">Login</a>
+		<a href="signup.html">Signup</a>
+		</div>
+		</li>
+		<li ><a href="about.html">About</a></li>
+		
+	</ul>
+<!--logo container-->
+	<table id="table1">
+		<tr>
+			<td width="25%" ><img src="logofinal.png"></td>
+			<td id="td1"  width="75%"><br>Global Edu Consultant<br><p class="p1">Come for consultance go for education</p></td>
+		</tr>
+	</table>
+<!--finish header(2)-->
+	
+<!--container holds the slideshow-->
+	<div id="container">
+		<img id="img" src="slide1.jpg">
+		
+		<div onclick="slide(-1)" id="left_holder">
+			<img class="left" src="previous.png">
+		</div>
+		<div onclick="slide(-1)" id="right_holder">
+			<img class="right" src="next.png">
+		</div>
+	</div>
+	<table width="100%" height="20px">
+		<tr width="100%">
+			<td width="20%"><p style="background-color:red;font-family:ELEPHANT;font-size:200%">NEWS</p></td>
+			<td><p style="color:white;font-family:Bodoni MT;background-color:grey;font-size:200%"><marquee>There are 28 universities giving above 80% scholar ship based on result.Canada govtment announced a new scholarship.USA embassy announced a monthly seminer in their embassy office.FRANCE govtment are interested to admit many foreign student. Please contact our consultant.</marquee></p></h1>
+		</tr>
+	</table>
+	<h1>Our Service</h1>
+	<center>
+		<table id="table2">
+			<tr>
+				<td width="20%" class="td4"><p class="p2">Student Visa</P></td>
+				<td width="50%" class="td4"><p class="p2">Spouse Visa</p></td>
+				<td width="33%" class="td4"><p class="p2">Career Builder</p></td>
+			</tr>
+			<tr>
+				<td width="20%"><p class="p3">The difference is that we will recommend you<br>to an expert who will guide you personally<br>throughout the process.</p></td>
+				<td width="50%"><p class="p3">Abroad citizens have two means of bringing<br>their foreign husbands or wives to the foreign<br>country to live.</p></td>
+				<td width="33%"><p class="p3">Evert person have a target to build his/her career<br>We help to get job and internship to a company</p></td>
+			</tr>
+		</table>
+	</center>
+	<h1>The Country We Support</h1>
+	<center>
+		<table id="table3" >
+			<tr>
+				<td id="td3"><img class="eee" src="united-states-of-america.png"></td>
+				<td id="td3"><img class="eee" src="canada.png"></td>
+				<td id="td3"><img class="eee" src="australia.png"><td>
+				<td id="td3"><img class="eee" src="united-kingdom.png"></td>
+				<td id="td3"><img class="eee" src="china.png"></td>
+				<td id="td3"><img class="eee" src="germany.png"></td>
+			</tr>
+			<tr>
+				<td id="td3"><img class="eee" src="france.png"></td>
+				<td id="td3"><img class="eee" src="new-zealand.png"></td>
+				<td id="td3"><img class="eee" src="japan.png"></td>
+				<td id="td3"><img class="eee" src="netherlands.png"></td>
+				<td id="td3"><img class="eee" src="brazil.png"></td>
+				<td id="td3"><img class="eee" src="india.png"></td>
+			</tr>
+		</table>
+	</center>
+<!--End of the page-->
+	<div class="footer">
+		<center>
+			<p style="background-color:none;color:white;font-family:Cooper Std Black;font-size:150%;">Our Social Contact<br><br><br><a href="#"><img id="social" src="1478134873_facebook.png"></a><a href="#"><img id="social" src="1478134932_twitter_circle_color.png"></a><a href="#"><img id="social" src="1478134990_WhatsApp.png"></a><br></p>
+		</center>
+	</div>	
+</body>
+</html>
